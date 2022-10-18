@@ -57,37 +57,6 @@ We have maintained this iteration worksheet for both sprints
 * <u> Future Tasks:</u>
     
     For the next sprint, we plan to complete the other  user stories- Implement and load custom visuals, implement the functionality for saving and retrieving the custom visuals and snapshots to and from the blob storage. 
-_________________________
-## Minutes of Meeting
-_________________
-### Meeting-1
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held virtually on Zoom on 24th March 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-•	To discuss status of Sprint 1.
-
-•	Decide on Action Items for this Sprint.
-### <u>Reports</u>
-Discussed the status of progress with current sprint:
-
-•	Finalized the user stories and tasks for each user story. 
-
-•	Assigned developers for each user story. 
-
-### <u>Action Items:</u>
-1.	Update Kanban board with user stories, tasks and assign them to developers.
-2.	Learn about blob storage, GitHub authentication.
-3.	Complete user stories and it’s linked tasks by the end of sprint.
-_____________________________
-## Process Reflection for Sprint 1
-* Although during the beginning of the sprint our development work was slow, we picked up pace and completed the user stories for the required sprint as desired.
-* Working in pairs and implementing pair programming practices proved good results.
-* Merge conflicts were causing some problems but we are working on that by implementing incremental development.
-
-_________________________
 
 # Sprint 2 : Sat Mar 26 -- Fri Apr 1
 ## Process
@@ -144,81 +113,6 @@ We have maintained this iteration worksheet for both sprints
 
     We have to work on loading custom visuals which is a part of the user story : Implement and Load Custom Visuals. We also have to set up test cases for blob storage.
 
-_________________________
-## Minutes of Meeting
-_________________
-
-### Meeting-2
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held in person on 25th March 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-•	To complete user stories assigned for developers.
-
-### <u>Reports</u>
-Discussed the status of progress with current sprint:
-
-•	To finish 2 user stories : Setup the blob storage backend and Setup GitHub authentication. 
-
-### <u>Action Items:</u>
-1.	Finished 2 user stories : Setup the blob storage backend and Setup GitHub authentication. 
-2.	Updated Kanban Board by moving the necessary user stories to "Done".
-
-_________________________
-### Meeting-3
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held in person on 27th March 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-•	To complete user stories assigned for developers.
-
-•	To complete tasks linked to user stories.
-
-### <u>Reports</u>
-Discussed the status of progress with current sprint:
-
-•	To start work on the two user stories pending for sprint 2.
-
-### <u>Action Items:</u>
-1. Made some minor changes to the Blob storage user story.
-2. Made some changes to the javascript files in the project that occurred due to merge conflicts.
-3. Started work on pulling repository data from GitHub, user story - Get data for visuals.
-4. Updated Kanban Board by moving the necessary user stories or tasks to "Done".
-
-_________________________
-### Meeting-4
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held in person and on zoom on 29th March 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-•	To complete user stories assigned for developers.
-
-### <u>Reports</u>
-Discussed the status of progress with current sprint:
-
-•	Work on and finish the two user stories pending for sprint 2.
-
-### <u>Action Items:</u>
-1. Finished user story - Save and retrieve snapshots. 
-2. Pulled issue related data from github for user story - Get data for visuals.
-3.  Updated Kanban Board by moving the necessary user stories or tasks to "Done".
-
-_________________________
-### Meeting-5
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held in person on 31st March 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-•	To complete user stories assigned for developers.
-
 ### <u>Reports</u>
 Discussed the status of progress with current sprint:
 
@@ -238,59 +132,6 @@ _____________________________
 __________________________
 __________________________
 ### DEPLOY SPRINT
-____________________________
-### Minutes of Meeting
-_________________________
-### Meeting-6
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held  on zoom on 11th April, 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-
-To discuss and divide up the initial tasks for deployment.
-
-### <u>Action Items:</u>
-- Create ARM templates for deployment: assigned to vrakinep and nprabhu5
-- Set up GitHub actions runaround VCL: assigned to nprabhu5 and arrao2
-
-### Meeting-7
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held in person on 13th April 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-To discuss the status of the previous meeting action items.
-
-### <u>Action Items:</u>
-- Start build phase for deployment: assigned to nyza and vrakinep
-- Implement ARM phase: assigned to vrakinep and nyza
-
-
-### Meeting-8
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held in person on 15th April 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-To discuss the status of the previous meeting action items and bugs found in the project.
-
-### <u>Action Items:</u>
-- Implement publish phase: assigned to arrao2 and nprabhu5
-- Fix browser reload functionality after saving visuals and snapshots: assigned to arrao2 and vrakinep
-
-### Meeting-9
-____________________
-### <u>Call to order</u>
-A meeting of CSC 510-s2022/CSC 510-16 was held in person on 17th April 2022.
-### <u>Attendees</u>
-Attendees included Anisha Rao, Neil Prabhu, Varsha Akinepalli and Nishitha Yza.
-### <u>Agenda:</u>
-To discuss the status of the previous meeting action items and set up server side test cases.
-
 ### <u>Action Items:</u>
 - Set up test cases for saving and viewing snapshots: assigned to vrakinep and nprabhu5.
 - Set up test cases for saving and viewing custom visuals: assigned to nyza and nprabhu5.
