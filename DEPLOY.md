@@ -1,6 +1,6 @@
 # Deployment Milestone
 
-Given that our deployment is on Azure, we decided to move forward with GitHub Actions as the deployment service instead of Ansible, as Ansible has limited support for Azure. The setup is similar to Ansible, in that we define a YAML file with the configuration of the pipeline. We also used our VCL instance to configure a "runner" that executes the pipeline each time there's a push to `main` branch. [Link](https://piazza.com/class/ky09haj6kvc533?cid=545) to Piazza discussion for GitHub Actions.
+Given that our deployment is on Azure, we decided to move forward with GitHub Actions as the deployment service instead of Ansible, as Ansible has limited support for Azure. The setup is similar to Ansible, in that we define a YAML file with the configuration of the pipeline. We also used our VCL instance to configure a "runner" that executes the pipeline each time there's a push to `main` branch.
 
 ## Deployment Scripts
 
@@ -8,12 +8,7 @@ The main.yml file contains the steps for deployment. Comments have been added to
 
 [Link to main.yml](.github/workflows/main.yml)
 
-The steps to run our scripts are:
-
-1) Connect to the VCL instance using the IP address: 152.7.777.222
-2) You will then need to navigate to the folder */home/nprabhu5* 
-3) Within this folder, you will find the folder *actions-runner*. Navigate to this folder.
-4) Now run the file *run.sh* using ./run.sh command. You will see something similar to what is shown below: 
+Run the file *run.sh* using ./run.sh command. You will see something similar to what is shown below: 
 
 ![Connected to GitHub](assets/connected.png)
 
@@ -85,10 +80,6 @@ When you are on our landing page, you can navigate among the different tabs to v
 
 - You can view the snapshot you recently saved by naivagating to the snapshot dropdown on the left side panel. Snapshots are saved with the timestamp it was generated. 
 
-______________________________________________________________________
-
-### Screencast link
-[Link](https://web.microsoftstream.com/video/90557368-57de-4358-84d6-97b8c99281c6)
 ______________________________________________________________________
 
 ### Link to WORKSHEET.md and PROCESS.md
