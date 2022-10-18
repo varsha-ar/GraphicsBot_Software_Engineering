@@ -160,7 +160,3 @@ Running npx c8 npm test and seeing testing coverage -
 ## Mocking Infrastructure
 
 Mocking of the API service call has been implemented in App.test.jsx. 
-
-## Screencast 
-
-[Link](https://web.microsoftstream.com/video/c791ae4e-c6df-48a9-ace6-b54f688b5caa)
