@@ -1,0 +1,52 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+env:
+  CI: false
+  AZURE_WEBAPP_NAME: janetprod
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - run: npm install # Install React dependencies
+      working-directory: clientapp
+    - run: npm test # Run test cases
+      working-directory: clientapp
+    - run: npm run build:prod # Creating a production build
+      working-directory: clientapp
+    - run: | # Install Azure CLI on the runner
+        sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+        curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+        AZ_REPO=$(lsb_release -cs)
+        echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+        sudo apt-get update
+        sudo apt-get install azure-cli
+    - run: az login -u ${{ secrets.AZURE_USERNAME }} -p ${{ secrets.AZURE_PASSWORD }} # Login to Azure account
+    - run: az account set --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }} # Choose the subscription we want to deploy to
+    - uses: azure/arm-deploy@v1 # ARM deploy. Uses the deploy templates and parameters in the 'deploy' folder
+      with:
+        resourceGroupName: DepTest
+        template: ./deploy/template.json
+        parameters: ./deploy/parameters.json github_app_secret=${{ secrets.APP_SECRET }}
+    - run: mkdir -p package/clientapp # Create a folder for the package to publish to the WebApp
+    - run: cp -r clientapp/build package/clientapp # Copy React build
+    - run: rsync -vt ./* package/ # Copy server files
+    - run: cp -r sampleData package 
+    - run: npm install -production # Install server dependencies
+      working-directory: package
+    - run: zip -r pack.zip * # Zip package for publishing
+      working-directory: package
+    - uses: azure/webapps-deploy@v2 # Publish the package 
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        package: package/pack.zip

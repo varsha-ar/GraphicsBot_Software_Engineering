@@ -1,0 +1,38 @@
+.tab-style {
+    background-color: #A55248;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+.tab-style:disabled {
+    background: gray;
+}
+
+.h4 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.snap-style {
+    background-color: #74250E;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 13px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #74250E;
+    color: white;
+}
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    background-color: #74250E;
+    color: white;
+}

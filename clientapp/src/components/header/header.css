@@ -1,0 +1,20 @@
+.flex-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 160px;
+    background-color: black;
+}
+
+.logo-size{
+    height: 160px;
+}
+
+.title{
+    display: flex;
+    color: white;
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}

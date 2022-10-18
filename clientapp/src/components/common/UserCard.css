@@ -1,0 +1,43 @@
+.logo{
+    width: 60px;
+    height: 60px;
+    margin: 6px;
+    border-radius: 5%;
+}
+
+.container2 {
+    width: 45%; /*this was 35% before */
+    margin: 10px 12px 12px 10px;
+    border: 1px  #74250E;
+    border-radius: 0px;
+    box-sizing: border-box;
+    border-color: #1d1c1b;
+    background-color: #c44f2b96;
+    display: inline-block;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    padding: 15px;
+}
+
+.text_study{
+    color:#000000;
+    font-weight:500;
+    display:flex;
+    align-items: left;
+    justify-content: left;
+    font-style:normal;
+    
+  }
+
+  .text_study2{
+    color:#000000;
+    font-weight:500;
+    display:flex;
+    align-items: right;
+    justify-content: right;
+    font-style:normal;
+    
+  }
+
+  #username{
+    font-size: medium;
+  }

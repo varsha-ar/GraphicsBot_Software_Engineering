@@ -1,0 +1,10 @@
+
+.flex-height {
+  display: flex;
+  height: calc(100vh - 160px);
+  flex-direction: column;
+}
+
+.custom-visual-container{
+  border-right: 1px solid;
+}

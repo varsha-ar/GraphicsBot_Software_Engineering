@@ -1,0 +1,39 @@
+{
+  "name": "csc510-16",
+  "version": "1.0.0",
+  "description": "[Click here for the DESIGN.md file](https://github.ncsu.edu/csc510-s2022/CSC510-16/blob/main/DESIGN.md)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ncsu.edu/csc510-s2022/CSC510-16.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/identity": "^2.0.4",
+    "@azure/keyvault-secrets": "^4.4.0",
+    "@azure/storage-blob": "^12.9.0",
+    "@mdi/react": "^1.5.0",
+    "axios": "^0.26.1",
+    "c8": "^7.11.0",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "follow-redirects": "^1.14.9",
+    "mdi-react": "^8.2.0",
+    "react": "16.8",
+    "react-dom": "16.8",
+    "react-is": "16.8",
+    "styled-components": "^5.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "jest": "^27.5.1"
+  }
+}
